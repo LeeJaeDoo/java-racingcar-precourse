@@ -14,6 +14,10 @@ public class Cars implements Moving {
         this.carList = new ArrayList<>();
     }
 
+    public Cars(List<Car> carList) {
+        this.carList = carList;
+    }
+
     public void setCarList(String[] carNames) {
         RandomEngine engine = new RandomEngine();
         for (String carName : carNames) {
