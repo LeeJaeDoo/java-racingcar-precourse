@@ -41,7 +41,7 @@ public class Cars implements Moving {
         int idx = 0;
         int max = carList.get(idx).getPosition();
         StringBuilder sb = new StringBuilder();
-        while (max == carList.get(idx).getPosition() && idx < carList.size()) {
+        while (idx < carList.size() && max == carList.get(idx).getPosition()) {
             sb.append(carList.get(idx).getName()).append(", ");
             idx++;
         }
